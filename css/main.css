@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F4F1EA;
+  color: #2C2C2C;
+  line-height: 1.6;
+}
+
+.btn-primary-custom {
+  background-color: #2E7D65;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.btn-primary-custom:hover {
+  background-color: rgb(32.2807017544, 87.7192982456, 70.8771929825);
+}
+
+.btn-accent {
+  background-color: #E76F51;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+.btn-accent:hover {
+  background-color: rgb(224.8181818182, 73.9090909091, 36.1818181818);
+}/*# sourceMappingURL=main.css.map */

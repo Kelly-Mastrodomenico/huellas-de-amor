@@ -1,0 +1,23 @@
+.btn-primary-custom {
+  background-color: $color-primary;
+  color: $color-light;
+  padding: $spacing-sm $spacing-md;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+}
+
+.btn-accent {
+  background-color: $color-accent;
+  color: $color-light;
+  padding: $spacing-sm $spacing-md;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: darken($color-accent, 10%);
+  }
+}
