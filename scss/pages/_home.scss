@@ -45,6 +45,26 @@
   }
 }
 
+/* MASCOTAS DESTACADAS */
+
+.mascota-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+
+  img {
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
 /* ==============================================
    MEDIA QUERY - TABLET
    ============================================== */

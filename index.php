@@ -54,5 +54,40 @@ $resultado = $conn->query($sql);
     </div>
 </section>
 
+<!-- Mascotas destacadas -->
+<section class="mascotas py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Mascotas Destacadas</h2>
+
+        <div class="row">
+            <?php while($mascota = $resultado->fetch_assoc()){?>
+                
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card mascota-card h-100">
+                        <img src="assets/img/<?php echo $mascota['imagen']; ?>" 
+                             class="card-img-top" 
+                             alt="<?php echo $mascota['nombre']; ?>">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">
+                                <?php echo $mascota['nombre']; ?>
+                            </h5>
+
+                            <p class="card-text">
+                                <?php echo $mascota['edad']; ?> años
+                            </p>
+
+                            <a href="#" class="btn-primary-custom">
+                                Ver detalles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <?php }; ?>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
