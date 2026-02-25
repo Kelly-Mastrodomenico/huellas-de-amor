@@ -1,31 +1,36 @@
-/* HERO - HOME
-   Imagen de fondo completa con overlay translúcido.
-   Diseñado Mobile First */
+/* ==================================================
+   HERO - HOME
+   --------------------------------------------------
+   Sección principal con imagen de fondo y overlay
+   integrado mediante linear-gradient.
+   Mobile First.
+   ================================================== */
 
 .hero {
-  position: relative;
-  background-image: url('../assets/img/hero.jpg');
+  width: 100%;
+  min-height: 100vh;
+
+  /* Overlay + Imagen en una sola propiedad */
+  background:
+    linear-gradient(
+      rgba(46, 125, 101, 0.75),
+      rgba(46, 125, 101, 0.75)
+    ),
+    url("../assets/img/hero.jpg");
+
   background-size: cover;
   background-position: center;
-  min-height: 80vh;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &__overlay {
-    background-color: rgba(46, 125, 101, 0.75); // verde con transparencia
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  text-align: center;
 
   &__content {
     color: $color-light;
     padding: $spacing-md;
+    max-width: 800px; // evita que el texto se extienda demasiado
   }
 
   &__title {
@@ -40,7 +45,9 @@
   }
 }
 
-/* MEDIA QUERY - TABLET*/
+/* ==============================================
+   MEDIA QUERY - TABLET
+   ============================================== */
 
 @media (min-width: 768px) {
   .hero__title {
@@ -52,13 +59,11 @@
   }
 }
 
-/* MEDIA QUERY - DESKTOP */
+/* ==============================================
+   MEDIA QUERY - DESKTOP
+   ============================================== */
 
 @media (min-width: 1200px) {
-  .hero {
-    min-height: 100vh;
-  }
-
   .hero__title {
     font-size: 3rem;
   }

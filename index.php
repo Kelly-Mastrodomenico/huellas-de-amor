@@ -1,4 +1,14 @@
-<?php session_start(); ?>
+<?php session_start();
+
+require_once "includes/conexion.php";
+
+$sql = "SELECT * FROM mascotas 
+        WHERE estado = 'disponible' 
+        ORDER BY fecha_registro DESC 
+        LIMIT 4";
+
+$resultado = $conn->query($sql);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -31,18 +41,16 @@
      Mobile First. -->
 
 <section class="hero">
-    <div class="hero__overlay">
-        <div class="container text-center hero__content">
-            <h2 class="hero__title">
-                Encuentra a tu nuevo mejor amigo
-            </h2>
-            <p class="hero__text">
-                Adopta, apadrina o acoge y cambia una vida para siempre.
-            </p>
-            <a href="adoptar.php" class="btn-accent">
-                Explorar Mascotas
-            </a>
-        </div>
+    <div class="container hero__content">
+        <h2 class="hero__title">
+            Encuentra a tu nuevo mejor amigo
+        </h2>
+        <p class="hero__text">
+            Adopta, apadrina o acoge y cambia una vida para siempre.
+        </p>
+        <a href="adoptar.php" class="btn-accent">
+            Explorar Mascotas
+        </a>
     </div>
 </section>
 

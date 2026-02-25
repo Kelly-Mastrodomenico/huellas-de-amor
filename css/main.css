@@ -1,3 +1,19 @@
+@charset "UTF-8";
+/* ==================================================
+   VARIABLES GLOBALES DEL SISTEMA DE DISEÑO
+   --------------------------------------------------
+   Contiene colores, tipografias y espaciados.
+   Si se desea cambiar la identidad visual del proyecto,
+   debe modificarse únicamente este archivo.
+   ================================================== */
+/* ==================================================
+   RESET GLOBAL
+   --------------------------------------------------
+   Este archivo elimina estilos por defecto del navegador
+   para asegurar coherencia visual en todos los dispositivos.
+
+   Se carga antes que cualquier otro archivo base.
+   ================================================== */
 *,
 *::before,
 *::after {
@@ -33,6 +49,59 @@ body {
 }
 .btn-accent:hover {
   background-color: rgb(224.8181818182, 73.9090909091, 36.1818181818);
-}/*# sourceMappingURL=main.css.map */
+}
 
-@import "pages/home";
+/* ==================================================
+   HERO - HOME
+   --------------------------------------------------
+   Sección principal con imagen de fondo y overlay
+   integrado mediante linear-gradient.
+   Mobile First.
+   ================================================== */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  /* Overlay + Imagen en una sola propiedad */
+  background: linear-gradient(rgba(46, 125, 101, 0.75), rgba(46, 125, 101, 0.75)), url("../assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero__content {
+  color: #ffffff;
+  padding: 2rem;
+  max-width: 800px;
+}
+.hero__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero__text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* ==============================================
+   MEDIA QUERY - TABLET
+   ============================================== */
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  .hero__text {
+    font-size: 1.2rem;
+  }
+}
+/* ==============================================
+   MEDIA QUERY - DESKTOP
+   ============================================== */
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=main.css.map */
