@@ -1,4 +1,15 @@
 <?php
+/*
+==================================================
+ARCHIVO DE CONEXIÓN A BASE DE DATOS
+--------------------------------------------------
+Centraliza la conexión MySQL del proyecto.
+
+Si se cambia de hosting,
+solo se deben modificar las credenciales aqui.
+==================================================
+*/
+
 $host = "localhost";
 $user = "root";
 $password = "";

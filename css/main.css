@@ -34,3 +34,5 @@ body {
 .btn-accent:hover {
   background-color: rgb(224.8181818182, 73.9090909091, 36.1818181818);
 }/*# sourceMappingURL=main.css.map */
+
+@import "pages/home";

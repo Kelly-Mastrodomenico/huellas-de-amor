@@ -1,0 +1,65 @@
+/* HERO - HOME
+   Imagen de fondo completa con overlay translúcido.
+   Diseñado Mobile First */
+
+.hero {
+  position: relative;
+  background-image: url('../assets/img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__overlay {
+    background-color: rgba(46, 125, 101, 0.75); // verde con transparencia
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    color: $color-light;
+    padding: $spacing-md;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin-bottom: $spacing-md;
+  }
+}
+
+/* MEDIA QUERY - TABLET*/
+
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__text {
+    font-size: 1.2rem;
+  }
+}
+
+/* MEDIA QUERY - DESKTOP */
+
+@media (min-width: 1200px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+  }
+}

@@ -1,7 +1,16 @@
+/* ==================================================
+   RESET GLOBAL
+   --------------------------------------------------
+   Este archivo elimina estilos por defecto del navegador
+   para asegurar coherencia visual en todos los dispositivos.
+
+   Se carga antes que cualquier otro archivo base.
+   ================================================== */
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; // Evita problemas de cálculo de tamaño
   margin: 0;
   padding: 0;
 }

@@ -27,11 +27,22 @@
     </div>
 </header>
 
-<section class="hero text-center py-5">
-    <div class="container">
-        <h2 class="mb-3">Encuentra a tu nuevo mejor amigo</h2>
-        <p class="mb-4">Adopta, apadrina o acoge y cambia una vida para siempre.</p>
-        <a href="adoptar.php" class="btn-primary-custom">Explorar Mascotas</a>
+<!-- HERO PRINCIPAL
+     Mobile First. -->
+
+<section class="hero">
+    <div class="hero__overlay">
+        <div class="container text-center hero__content">
+            <h2 class="hero__title">
+                Encuentra a tu nuevo mejor amigo
+            </h2>
+            <p class="hero__text">
+                Adopta, apadrina o acoge y cambia una vida para siempre.
+            </p>
+            <a href="adoptar.php" class="btn-accent">
+                Explorar Mascotas
+            </a>
+        </div>
     </div>
 </section>
 

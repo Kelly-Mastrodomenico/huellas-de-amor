@@ -1,16 +1,24 @@
+/* ==================================================
+   VARIABLES GLOBALES DEL SISTEMA DE DISEÑO
+   --------------------------------------------------
+   Contiene colores, tipografias y espaciados.
+   Si se desea cambiar la identidad visual del proyecto,
+   debe modificarse únicamente este archivo.
+   ================================================== */
+
 // 🎨 COLORES PRINCIPALES
-$color-primary: #2E7D65;     // Verde protector
-$color-secondary: #A8D5C2;   // Verde claro
-$color-accent: #E76F51;      // Coral botones importantes
-$color-bg: #F4F1EA;          // Beige fondo general
-$color-dark: #2C2C2C;        // Texto principal
+$color-primary: #2E7D65;   // Verde protector principal
+$color-secondary: #A8D5C2; // Verde suave complementario
+$color-accent: #E76F51;    // Color de acción (botones importantes)
+$color-bg: #F4F1EA;        // Fondo general
+$color-dark: #2C2C2C;      // Texto principal
 $color-light: #ffffff;
 
-// 📏 ESPACIADOS
+// 📏 ESPACIADOS BASE (Sistema de escala)
 $spacing-xs: 0.5rem;
 $spacing-sm: 1rem;
 $spacing-md: 2rem;
 $spacing-lg: 4rem;
 
-// 🔤 TIPOGRAFÍA
+// 🔤 TIPOGRAFÍA PRINCIPAL
 $font-primary: 'Poppins', sans-serif;
